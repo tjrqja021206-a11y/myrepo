@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋아하는 음식 목록</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .food {
+            position: relative;
+        }
+
+        .food-item {
+            position: relative;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 12px;
+            font-size: 40px;
+            color: black;
+            padding: 8px 12px;
+        }
+        .food-item:hover {
+            border-color: orange;
+            color: red;
+        }
+
+        .food-item img {
+            display: none;
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid orange;
+            border-radius: 12px;
+            background: white;
+            z-index: 10;
+        }
+
+        .food-item:hover img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>내가 좋아하는 음식</h1>
+    <div class="food">
+        <div class="food-item">국밥
+            <img src="./images/국밥.png" alt="국밥">
+        </div>
+        <div class="food-item">피자
+            <img src="./images/피자.png" alt="피자">
+        </div>
+
+        <div class="food-item">제육볶음
+            <img src="./images/제육볶음.png" alt="제육볶음">
+        </div>
+        <div class="food-item">생선까스
+            <img src="./images/생선까스.png" alt="생선까스">
+        </div>
+        <div class="food-item">간장게장
+            <img src="./images/간장게장.png" alt="간장게장">
+        </div>
+        <div class="food-item">회
+            <img src="./images/회.png" alt="회">
+        </div>
+    </div>
+     <button>
+        <a href="./자기소개.html">돌아가기</a>
+    </button>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>싫어하는 음식 목록</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .food {
+            position: relative;
+        }
+
+        .food-item {
+            position: relative;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 12px;
+            font-size: 40px;
+            color: black;
+            padding: 8px 12px;
+        }
+        .food-item:hover {
+            border-color: orange;
+            color: red;
+        }
+
+        .food-item img {
+            display: none;
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid orange;
+            border-radius: 12px;
+            background: white;
+            z-index: 10;
+        }
+
+        .food-item:hover img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>내가 싫어하는 음식</h1>
+    <div class="food">
+        <div class="food-item">오이
+            <img src="./images/오이.png" alt="오이">
+        </div>
+        <div class="food-item">가지
+            <img src="./images/가지.png" alt="가지">
+        </div>
+    </div>
+       <button>
+        <a href="./자기소개.html">돌아가기</a>
+    </button>
+</body>
+</html>
